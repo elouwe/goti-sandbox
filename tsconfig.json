@@ -1,0 +1,45 @@
+{
+  // настройки компилятора
+  "compilerOptions": {
+    // где лежит мой исходный код
+    "rootDir": "src",
+
+    // куда класть собранные файлы
+    "outDir": "dist",
+
+    // в какую версию JS компилировать
+    "target": "ES2020",
+
+    // как работать с модулями (import/export)
+    "module": "ESNext",
+
+    // какие встроенные возможности доступны (JS + браузер)
+    "lib": ["ES2020", "DOM"],
+
+    // как искать модули при импортах
+    "moduleResolution": "node",
+
+    // строгая проверка типов (ловит ошибки)
+    "strict": true,
+
+    // запрещает использовать неявный any
+    "noImplicitAny": true,
+
+    // отличает "нет свойства" от "undefined"
+    "exactOptionalPropertyTypes": true,
+
+    // помнит, что элемент массива может отсутствовать
+    "noUncheckedIndexedAccess": true,
+  },
+
+  // какие файлы брать
+  "include": [
+    "src"
+  ],
+
+  // какие папки пропустить
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
