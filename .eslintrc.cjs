@@ -18,7 +18,7 @@ module.exports = {
   // указываем окружения, где может выполняться код
   env: {
     es2020: true, // современный JavaScript
-    node: true,   // поддержка Node.js
+    node: true, // поддержка Node.js
     browser: true // поддержка браузера
   }
 };
